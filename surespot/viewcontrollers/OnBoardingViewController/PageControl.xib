@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="C98-2u-Q43" customClass="PageControl">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view tag="1001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kP7-rB-pzB">
+                    <rect key="frame" x="15" y="5" width="10" height="10"/>
+                    <color key="backgroundColor" red="0.81568627450980391" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="s5R-MM-VLK"/>
+                        <constraint firstAttribute="width" constant="10" id="ubE-3Y-Ab5"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view tag="1002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCf-AB-6bE">
+                    <rect key="frame" x="45" y="5" width="10" height="10"/>
+                    <color key="backgroundColor" red="0.81568627449999997" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="QiX-Pm-BXD"/>
+                        <constraint firstAttribute="width" constant="10" id="U98-MG-Qjx"/>
+                        <constraint firstAttribute="height" constant="10" id="jRt-Xc-ZEd"/>
+                        <constraint firstAttribute="height" constant="10" id="nIi-wB-y4Q"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="U98-MG-Qjx"/>
+                            <exclude reference="jRt-Xc-ZEd"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view tag="1003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Wd-X8-TLd">
+                    <rect key="frame" x="75" y="5" width="10" height="10"/>
+                    <color key="backgroundColor" red="0.81568627449999997" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="jqF-wV-wxP"/>
+                        <constraint firstAttribute="height" constant="10" id="xuY-E3-L5f"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M37-4E-8yn">
+                    <rect key="frame" x="13" y="3" width="15" height="15"/>
+                    <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="UXc-8o-RzU"/>
+                        <constraint firstAttribute="height" constant="15" id="wj4-ej-vsF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="7.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="M37-4E-8yn" firstAttribute="leading" secondItem="C98-2u-Q43" secondAttribute="leading" constant="13" id="9vi-t5-4md"/>
+                <constraint firstItem="6Wd-X8-TLd" firstAttribute="centerY" secondItem="C98-2u-Q43" secondAttribute="centerY" id="BEi-mp-Y48"/>
+                <constraint firstItem="qCf-AB-6bE" firstAttribute="centerY" secondItem="C98-2u-Q43" secondAttribute="centerY" id="Qvz-L7-Hlj"/>
+                <constraint firstItem="kP7-rB-pzB" firstAttribute="centerY" secondItem="C98-2u-Q43" secondAttribute="centerY" id="UTB-aE-eoT"/>
+                <constraint firstItem="6Wd-X8-TLd" firstAttribute="leading" secondItem="qCf-AB-6bE" secondAttribute="trailing" constant="20" id="aKi-xs-wVP"/>
+                <constraint firstItem="qCf-AB-6bE" firstAttribute="centerX" secondItem="C98-2u-Q43" secondAttribute="centerX" id="ajj-xE-yah"/>
+                <constraint firstItem="qCf-AB-6bE" firstAttribute="leading" secondItem="kP7-rB-pzB" secondAttribute="trailing" constant="20" id="tgD-9T-BtI"/>
+                <constraint firstItem="M37-4E-8yn" firstAttribute="centerY" secondItem="C98-2u-Q43" secondAttribute="centerY" id="u58-ZS-2hU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="selectIndicator" destination="M37-4E-8yn" id="Cad-fx-CbL"/>
+                <outlet property="selectedIndicatorLeftConstraint" destination="9vi-t5-4md" id="l9j-g8-Y7N"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="148"/>
+        </view>
+    </objects>
+</document>

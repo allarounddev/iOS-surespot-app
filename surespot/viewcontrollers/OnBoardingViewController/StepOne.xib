@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Light.ttf">
+            <string>Raleway-Light</string>
+            <string>Raleway-Light</string>
+        </mutableArray>
+        <mutableArray key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="T32-5w-4Lh" customClass="StepOne">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR IN CONTROL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kx-D4-Jab">
+                    <rect key="frame" x="98" y="141" width="219" height="29"/>
+                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1E9-ju-ImU">
+                    <rect key="frame" x="102" y="198" width="211" height="211"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="On-BoardingStep1Logo" translatesAutoresizingMaskIntoConstraints="NO" id="b7M-qB-PRg">
+                            <rect key="frame" x="14" y="48" width="183" height="116"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="b7M-qB-PRg" secondAttribute="height" multiplier="183:116" id="8RP-ag-HwW"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="b7M-qB-PRg" firstAttribute="height" secondItem="1E9-ju-ImU" secondAttribute="height" constant="-95" id="M4D-rD-EHy"/>
+                        <constraint firstItem="b7M-qB-PRg" firstAttribute="width" secondItem="1E9-ju-ImU" secondAttribute="width" constant="-28" id="VUC-Tn-UQw"/>
+                        <constraint firstItem="b7M-qB-PRg" firstAttribute="centerY" secondItem="1E9-ju-ImU" secondAttribute="centerY" id="YMZ-4p-H84"/>
+                        <constraint firstAttribute="width" secondItem="1E9-ju-ImU" secondAttribute="height" multiplier="1:1" id="faH-hl-Z3y"/>
+                        <constraint firstItem="b7M-qB-PRg" firstAttribute="centerX" secondItem="1E9-ju-ImU" secondAttribute="centerX" id="h4Q-go-zWP"/>
+                        <constraint firstItem="b7M-qB-PRg" firstAttribute="width" secondItem="1E9-ju-ImU" secondAttribute="width" constant="-28" id="l2I-ku-vqw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="105.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="M4D-rD-EHy"/>
+                            <exclude reference="l2I-ku-vqw"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All the information is in your hands - even after it has left your hands." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="EDx-G5-KzE">
+                    <rect key="frame" x="52" y="432" width="310" height="33"/>
+                    <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="14"/>
+                    <color key="textColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Delete messages from the receivers device at your convenience if you no longer want it out there." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-7i-2T3">
+                    <rect key="frame" x="52" y="465" width="310" height="50"/>
+                    <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="14"/>
+                    <color key="textColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.090196078431372548" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="1E9-ju-ImU" firstAttribute="width" secondItem="T32-5w-4Lh" secondAttribute="width" multiplier="0.509" id="4Ba-6e-4eH"/>
+                <constraint firstItem="EDx-G5-KzE" firstAttribute="centerY" secondItem="T32-5w-4Lh" secondAttribute="centerY" constant="80.5" id="74P-zq-Sny"/>
+                <constraint firstItem="EDx-G5-KzE" firstAttribute="top" secondItem="1E9-ju-ImU" secondAttribute="bottom" constant="23" id="Cvd-AC-1Tj"/>
+                <constraint firstItem="1E9-ju-ImU" firstAttribute="top" secondItem="0Kx-D4-Jab" secondAttribute="bottom" constant="28" id="I2o-Cl-8V1"/>
+                <constraint firstItem="EDx-G5-KzE" firstAttribute="centerX" secondItem="T32-5w-4Lh" secondAttribute="centerX" id="J0W-xq-Tlq"/>
+                <constraint firstItem="zfE-7i-2T3" firstAttribute="top" secondItem="EDx-G5-KzE" secondAttribute="bottom" id="VKU-m6-nAZ"/>
+                <constraint firstItem="0Kx-D4-Jab" firstAttribute="centerX" secondItem="T32-5w-4Lh" secondAttribute="centerX" id="dKd-Ic-egn"/>
+                <constraint firstItem="zfE-7i-2T3" firstAttribute="width" secondItem="EDx-G5-KzE" secondAttribute="width" id="eEB-ez-Ndk"/>
+                <constraint firstItem="EDx-G5-KzE" firstAttribute="width" secondItem="T32-5w-4Lh" secondAttribute="width" multiplier="0.75" id="fjM-eS-udY"/>
+                <constraint firstItem="1E9-ju-ImU" firstAttribute="centerX" secondItem="T32-5w-4Lh" secondAttribute="centerX" id="fne-d6-2Zs"/>
+                <constraint firstItem="zfE-7i-2T3" firstAttribute="centerX" secondItem="T32-5w-4Lh" secondAttribute="centerX" id="h2D-Uj-nKL"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <connections>
+                <outlet property="circleView" destination="1E9-ju-ImU" id="r7R-I2-S7t"/>
+                <outlet property="firstContent" destination="EDx-G5-KzE" id="3SW-m5-ds4"/>
+                <outlet property="imageView" destination="b7M-qB-PRg" id="94Z-Uj-ReG"/>
+                <outlet property="secondContent" destination="zfE-7i-2T3" id="dem-0K-ePN"/>
+                <outlet property="titleLabel" destination="0Kx-D4-Jab" id="0Dt-NE-JkZ"/>
+            </connections>
+            <point key="canvasLocation" x="1064" y="314"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="On-BoardingStep1Logo" width="183" height="116"/>
+    </resources>
+</document>

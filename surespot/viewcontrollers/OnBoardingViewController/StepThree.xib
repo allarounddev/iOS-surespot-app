@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Light.ttf">
+            <string>Raleway-Light</string>
+        </mutableArray>
+        <mutableArray key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="02m-vq-1rt" customClass="StepThree">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEXT-GENERATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovj-l9-oNO">
+                    <rect key="frame" x="95" y="134" width="225" height="29"/>
+                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3W-QX-GsI">
+                    <rect key="frame" x="102" y="191" width="211" height="211"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="On-BoardingStep3Logo" translatesAutoresizingMaskIntoConstraints="NO" id="tOR-iV-S6C">
+                            <rect key="frame" x="24" y="48" width="164" height="114"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="tOR-iV-S6C" secondAttribute="height" multiplier="82:57" id="NlQ-Qy-MKF"/>
+                                <constraint firstAttribute="width" secondItem="tOR-iV-S6C" secondAttribute="height" multiplier="82:57" id="pBE-oq-jXc"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="NlQ-Qy-MKF"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tOR-iV-S6C" firstAttribute="height" secondItem="z3W-QX-GsI" secondAttribute="height" constant="-97" id="AHP-aG-6X3"/>
+                        <constraint firstItem="tOR-iV-S6C" firstAttribute="width" secondItem="z3W-QX-GsI" secondAttribute="width" constant="-47" id="Sto-Fu-El4"/>
+                        <constraint firstItem="tOR-iV-S6C" firstAttribute="width" secondItem="z3W-QX-GsI" secondAttribute="width" constant="-47" id="aZl-te-cnK"/>
+                        <constraint firstItem="tOR-iV-S6C" firstAttribute="centerX" secondItem="z3W-QX-GsI" secondAttribute="centerX" id="d5T-tc-qeo"/>
+                        <constraint firstAttribute="width" secondItem="z3W-QX-GsI" secondAttribute="height" multiplier="1:1" id="ggg-bT-qpk"/>
+                        <constraint firstItem="tOR-iV-S6C" firstAttribute="centerY" secondItem="z3W-QX-GsI" secondAttribute="centerY" id="mHQ-s9-nIS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="105.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="AHP-aG-6X3"/>
+                            <exclude reference="Sto-Fu-El4"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encrypted, private, and anonymous messaging with support for offline P2P messaging." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogw-If-BSB">
+                    <rect key="frame" x="52" y="432" width="311" height="33"/>
+                    <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="14"/>
+                    <color key="textColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.090196078431372548" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ogw-If-BSB" firstAttribute="top" secondItem="z3W-QX-GsI" secondAttribute="bottom" constant="30" id="A2O-Vw-kd4"/>
+                <constraint firstItem="ogw-If-BSB" firstAttribute="centerX" secondItem="02m-vq-1rt" secondAttribute="centerX" id="QmG-nX-6tG"/>
+                <constraint firstItem="ogw-If-BSB" firstAttribute="centerY" secondItem="02m-vq-1rt" secondAttribute="centerY" constant="80" id="bRq-JK-Inu"/>
+                <constraint firstItem="z3W-QX-GsI" firstAttribute="centerX" secondItem="02m-vq-1rt" secondAttribute="centerX" id="hA4-H2-hn3"/>
+                <constraint firstItem="z3W-QX-GsI" firstAttribute="width" secondItem="02m-vq-1rt" secondAttribute="width" multiplier="0.509" id="n1e-zk-CdY"/>
+                <constraint firstItem="z3W-QX-GsI" firstAttribute="top" secondItem="Ovj-l9-oNO" secondAttribute="bottom" constant="28" id="nz2-B2-Dio"/>
+                <constraint firstItem="Ovj-l9-oNO" firstAttribute="centerX" secondItem="02m-vq-1rt" secondAttribute="centerX" id="tYV-zQ-Ocx"/>
+                <constraint firstItem="ogw-If-BSB" firstAttribute="width" secondItem="02m-vq-1rt" secondAttribute="width" multiplier="0.75" id="xk9-p1-pvX"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <connections>
+                <outlet property="circleView" destination="z3W-QX-GsI" id="vXK-DY-ppT"/>
+                <outlet property="contentLabel" destination="Ovj-l9-oNO" id="pMA-Ly-N9c"/>
+                <outlet property="imageView" destination="tOR-iV-S6C" id="5MG-7e-5Lj"/>
+                <outlet property="titleLabel" destination="Ovj-l9-oNO" id="pDJ-sG-8Mc"/>
+            </connections>
+            <point key="canvasLocation" x="1302" y="299"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="On-BoardingStep3Logo" width="164" height="114"/>
+    </resources>
+</document>

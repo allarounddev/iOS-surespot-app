@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Key</key>
+			<string>logged_in_user</string>
+			<key>Title</key>
+			<string>identity</string>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+		</dict>
+	        <dict>
+            <key>Type</key>
+            <string>PSChildPaneSpecifier</string>
+            <key>Title</key>
+            <string>pref_title_activity_identity_management</string>
+            <key>File</key>
+            <string>identity</string>
+        </dict>
+        <dict>
+            <key>Type</key>
+            <string>PSChildPaneSpecifier</string>
+            <key>Title</key>
+            <string>settings_for_identity</string>
+            <key>File</key>
+            <string>user_options</string>
+        </dict>
+        <dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>					</dict>
+        <dict>
+			<key>IASKViewControllerClass</key>
+			<string>HelpViewController</string>
+			<key>IASKViewControllerSelector</key>
+			<string>init</string>
+			<key>Title</key>
+			<string>pref_title_help</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+        <dict>
+			<key>IASKViewControllerClass</key>
+			<string>AboutViewController</string>
+			<key>IASKViewControllerSelector</key>
+			<string>init</string>
+			<key>Title</key>
+			<string>pref_title_about_surespot</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+        <dict>
+			<key>DefaultValue</key>
+			<string>not set</string>
+			<key>Key</key>
+			<string>version_preference</string>
+			<key>Title</key>
+			<string>version</string>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>not set</string>
+			<key>Key</key>
+			<string>build_preference</string>
+			<key>Title</key>
+			<string>build</string>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+		</dict>
+    </array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>
